@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Градус - Меню</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #fff;
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #000;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .category {
+            margin-bottom: 40px;
+        }
+        .category h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .item:last-child {
+            border-bottom: none;
+        }
+        .item img {
+            max-width: 150px;
+            margin-right: 20px;
+        }
+        .item-details {
+            flex-grow: 1;
+        }
+        .item-name {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .item-price {
+            font-size: 16px;
+            color: #888;
+        }
+        .add-to-cart {
+            background-color: #f44336;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Градус">
+        </div>
+        <nav>
+            <a href="#">Акции</a>
+            <a href="#">Меню</a>
+            <a href="#">Забронировать</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Меню</h1>
+        <div class="category">
+            <h2>Горячее</h2>
+            <div class="item">
+                <img src="steak.jpg" alt="Большой стейк из палтуса">
+                <div class="item-details">
+                    <div class="item-name">Большой стейк из палтуса</div>
+                    <div class="item-price">1550 ₽</div>
+                </div>
+                <button class="add-to-cart">Добавить в корзину</button>
+            </div>
+            <div class="item">
+                <div class="item-details">
+                    <div class="item-name">Жареный палтус в соусе сладкий чили</div>
+                    <div class="item-price">890 ₽</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-details">
+                    <div class="item-name">Подкопченная куриная фофель</div>
+                    <div class="item-price">1390 ₽</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-details">
+                    <div class="item-name">Креветки, обжаренные в соусе из томатов, чеснока и базилика</div>
+                    <div class="item-price">1190 ₽</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+
+        <p>Телефон: +7 (879) 657-45-43</p>
+        <p>Адрес: 141701, Московская область, г. Долгопрудный, пл. Собина, д. 1</p>
+        <p>Соцсети: <a href="#">VK</a> | <a href="#">Telegram</a></p>
+    </footer>
+</body>
+</html>
